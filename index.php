@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="main/css/TelaEnsaio.css">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="main/js/GraficoEnsaio.js"></script>
-</head>
-    
+</head> 
 <body>
     <header>
         <img src="main/img/Logo.png" alt="Ferrusi Logo" class="logo">
