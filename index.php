@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="main/css/TelaEnsaio.css">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="main/js/GraficoEnsaio.js"></script>
-
 </head>
 <body>
     <header>
