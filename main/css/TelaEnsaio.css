@@ -45,7 +45,9 @@ footer {
     overflow-y: auto; /* Adicionando barra de rolagem caso necessário */
 }
 
-
+.top-container {
+    margin-top: 5px; /* Espaço para o header */
+}
 
 .bottom-container {
     display: flex;
