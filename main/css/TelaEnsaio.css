@@ -69,6 +69,21 @@ footer {
     padding: 20px;
 }
 
+.left01 {
+    font-variant-caps: all-small-caps;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #040404;
+    border: 1px solid #040404;
+    box-sizing: border-box;
+    margin-top: 120px; /* Espaço para o header */
+}
+
+
 .full-width {
     width: 100%;
     padding: 20px;
