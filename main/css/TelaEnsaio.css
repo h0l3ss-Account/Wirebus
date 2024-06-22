@@ -49,6 +49,9 @@ footer {
     margin: 70px 0 0; /* Espaço para o header */
 }
 
+.botton-container {
+}
+
 .bottom-container {
     height: 60vh; /* Altura para o container inferior */
 }
@@ -175,7 +178,6 @@ footer {
     width: 300px;
     height: 100px;
     font-weight: bold;
-    position: absolute;
     top: 15%; /* Ajuste conforme necessário */
     left: 50%; /* Ajuste conforme necessário */
     color: #040404;

@@ -26,11 +26,8 @@
                
 
         </div>
-        <div class="right">
-
-        </div>
     </div>
-    <div class="container top-container">
+    <div class="container botton-container">
         <div class="left">
 
         </div>
