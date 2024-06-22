@@ -12,7 +12,6 @@ header {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -43,10 +42,6 @@ footer {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto; /* Adicionando barra de rolagem caso necessário */
-}
-
-.top-container {
-    margin: 70px 0 0; /* Espaço para o header */
 }
 
 .bottom-container {
