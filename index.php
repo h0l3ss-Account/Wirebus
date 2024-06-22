@@ -29,8 +29,19 @@
 
         </div>
         <div class="right">
+
+        </div>
+    </div>
+    <div class="container top-container">
+        <div class="left">
         <div class="full-width" id="grafico-container"></div>
 
+        </div>
+        <div class="center">
+               
+        </div>
+        <div class="right">
+     
         </div>
     </div>
     <footer>
