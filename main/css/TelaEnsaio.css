@@ -183,4 +183,8 @@ footer {
 
 .botton-container {
     height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centralizar horizontalmente os elementos */
+    gap: 20px; /* Espaçamento entre os elementos */
 }
