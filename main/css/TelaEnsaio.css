@@ -45,7 +45,9 @@ footer {
     overflow-y: auto; /* Adicionando barra de rolagem caso necessário */
 }
 
-
+.top-container {
+    margin-top: 70px; /* Espaço para o header */
+}
 
 .bottom-container {
     display: flex;
@@ -127,7 +129,7 @@ footer {
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: white;
     color: #040404;
     border: 1px solid #040404;
     box-sizing: border-box;
