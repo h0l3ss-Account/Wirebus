@@ -58,15 +58,13 @@ footer {
 .left, .center, .right {
     width: 33.33%; /* Cada coluna ocupará um terço da largura da tela */
     padding: 20px;
-    background-color: #f7f7f7;
 }
 
-.left {
-    background-color: #f7f7f7; /* Cor da coluna esquerda */
-}
 
-.center {
-    background-color: #f7f7f7; /* Cor da coluna central */
+
+.center01 {
+    width: 66.66%; /* Cada coluna ocupará um terço da largura da tela */
+    padding: 20px;
 }
 
 
