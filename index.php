@@ -14,10 +14,31 @@
         <img src="main/img/Logo.png" alt="Logo" class="logo">
     </header>
 
-    <div class="container top-container">
-    <div class="center01">
-        Monitoramento em Núvem - WMT-306
+    <div class="container botton-container">
+        <div class="left01">
+            <div class="indicador-status-posicao">
+                <div class="indicador-status-texto-posicao">Analog Output 1:</div>
+                <div class="indicador-status-valor-posicao">0</div>
+                <div class="indicador-status-valor-sufixo">0 ~ 20 mA</div>
+            </div>
+            <div class="indicador-status-posicao">
+                <div class="indicador-status-texto-posicao">Analog Output 2:</div>
+                <div class="indicador-status-valor-posicao">0</div>
+                <div class="indicador-status-valor-sufixo">0 ~ 20 mA</div>
+            </div>
+            <div class="indicador-status-posicao">
+                <div class="indicador-status-texto-posicao">Digital Input 1:</div>
+                <div class="indicador-status-valor-posicao">0</div>
+                <div class="indicador-status-valor-sufixo">DI</div>
+            </div>
+            <div class="indicador-status-posicao">
+                <div class="indicador-status-texto-posicao">SSR:</div>
+                <div class="indicador-status-valor-posicao">0</div>
+                <div class="indicador-status-valor-sufixo">On/Off</div>
+            </div>
         </div>
+    </div>
+    <div class="container top-container">
         <div class="left">
             <img src="main/img/Equipamento.png">
         </div>
