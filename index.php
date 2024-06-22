@@ -16,26 +16,7 @@
 
     <div class="container botton-container">
         <div class="left01">
-            <div class="indicador-status-posicao">
-                <div class="indicador-status-texto-posicao">Analog Output 1:</div>
-                <div class="indicador-status-valor-posicao">0</div>
-                <div class="indicador-status-valor-sufixo">0 ~ 20 mA</div>
-            </div>
-            <div class="indicador-status-posicao">
-                <div class="indicador-status-texto-posicao">Analog Output 2:</div>
-                <div class="indicador-status-valor-posicao">0</div>
-                <div class="indicador-status-valor-sufixo">0 ~ 20 mA</div>
-            </div>
-            <div class="indicador-status-posicao">
-                <div class="indicador-status-texto-posicao">Digital Input 1:</div>
-                <div class="indicador-status-valor-posicao">0</div>
-                <div class="indicador-status-valor-sufixo">DI</div>
-            </div>
-            <div class="indicador-status-posicao">
-                <div class="indicador-status-texto-posicao">SSR:</div>
-                <div class="indicador-status-valor-posicao">0</div>
-                <div class="indicador-status-valor-sufixo">On/Off</div>
-            </div>
+            Monitoramento em Núvem - Spectra WMT-306
         </div>
     </div>
     <div class="container top-container">
