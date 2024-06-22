@@ -182,7 +182,7 @@ footer {
     color: #040404;
     border: 1px solid #040404; /* Adicionando a palavra-chave "solid" para definir o estilo da borda */
     background-color: #ffffff;
-
+    margin-top: 40px;
 }
 
 .botton-container {
