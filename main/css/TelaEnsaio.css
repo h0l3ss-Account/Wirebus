@@ -110,64 +110,77 @@ footer {
     border-radius: 5px;
 }
 
-
-
-
-
 .indicador-status-posicao {
-    font-size: 18px; /* Diminuir o tamanho da fonte */
-    width: 80%; /* Usar porcentagem para responsividade */
-    max-width: 250px; /* Definir um tamanho máximo */
-    height: auto; /* Ajustar automaticamente a altura */
-    padding: 10px; /* Adicionar padding para espaço interno */
-    font-weight: bold;
-    position: absolute; /* Adicionar position para usar top e left */
-    top: 10%; /* Ajustar conforme necessário */
-    left: 50%; /* Ajustar conforme necessário */
-    transform: translateX(-50%); /* Centralizar horizontalmente */
-    color: #040404;
-    border: 1px solid #040404; /* Adicionando a palavra-chave "solid" para definir o estilo da borda */
+    font-size: 18px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto; /* Centralizar a caixa horizontalmente */
+    padding: 10px;
     background-color: #ffffff;
-    margin-top: 20px; /* Diminuir a margem superior */
+    color: #040404;
+    border: 1px solid #040404;
     box-sizing: border-box; /* Incluir bordas e padding nas dimensões */
+    text-align: center;
+}
+
+.indicador-status-texto-posicao {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaço entre o texto e a caixa */
+}
+
+.indicador-status-valor-posicao {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.indicador-status-valor-sufixo {
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 5px;
 }
 
 /* Media Queries para responsividade */
 @media (max-width: 600px) {
     .indicador-status-posicao {
-        font-size: 16px; /* Diminuir o tamanho da fonte em telas menores */
-        padding: 8px; /* Ajustar o padding */
+        font-size: 16px;
+    }
+    
+    .indicador-status-texto-posicao {
+        font-size: 14px;
+    }
+
+    .indicador-status-valor-posicao {
+        font-size: 20px;
+    }
+
+    .indicador-status-valor-sufixo {
+        font-size: 16px;
     }
 }
 
 @media (max-width: 400px) {
     .indicador-status-posicao {
-        font-size: 14px; /* Diminuir ainda mais o tamanho da fonte em telas muito pequenas */
-        padding: 6px; /* Ajustar o padding */
+        font-size: 14px;
+    }
+    
+    .indicador-status-texto-posicao {
+        font-size: 12px;
+    }
+
+    .indicador-status-valor-posicao {
+        font-size: 18px;
+    }
+
+    .indicador-status-valor-sufixo {
+        font-size: 14px;
     }
 }
+
+
+
 
 .botton-container {
     height: 50%;
 }
-
-.indicador-status-texto-posicao{
-    color: #040404;
-    font-size: 40px;
-    margin-top: -16%;
-    font-variant-caps: all-petite-caps;
-}
-
-.indicador-status-valor-posicao{
-    font-variant-caps: all-petite-caps;
-    font-size: 80px;
-    margin-left: 30%;
-    color: #31488c;
-}
-
-.indicador-status-valor-sufixo{
-    margin-left: 80%;
-    margin-top: -5%;
-    color: #040404;
-}
-
