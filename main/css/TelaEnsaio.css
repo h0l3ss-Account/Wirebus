@@ -77,25 +77,10 @@ footer {
     background-color: white; /* Cor da coluna horizontal inferior */
 }
 
-bottom-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh; /* Altura para o container inferior */
-    padding: 20px;
-}
-
-.left01 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Espaçamento entre os elementos */
-}
-
 .indicador-status-posicao {
     font-size: 18px;
-    width: 200px; /* Ajuste conforme necessário */
-    margin: 10px;
+    width: calc(50% - 20px); /* Dois elementos por linha, com espaçamento */
+    max-width: 300px;
     padding: 10px;
     background-color: #ffffff;
     color: #040404;
@@ -121,7 +106,6 @@ bottom-container {
     display: inline-block;
     margin-left: 5px;
 }
-
 
 /* Media Queries para responsividade */
 @media (max-width: 800px) {
