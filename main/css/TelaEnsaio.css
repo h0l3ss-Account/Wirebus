@@ -171,16 +171,36 @@ footer {
 }
 
 .indicador-status-posicao {
-    font-size: 24px;
-    width: 300px;
-    height: 100px;
+    font-size: 18px; /* Diminuir o tamanho da fonte */
+    width: 80%; /* Usar porcentagem para responsividade */
+    max-width: 250px; /* Definir um tamanho máximo */
+    height: auto; /* Ajustar automaticamente a altura */
+    padding: 10px; /* Adicionar padding para espaço interno */
     font-weight: bold;
-    top: 15%; /* Ajuste conforme necessário */
-    left: 50%; /* Ajuste conforme necessário */
+    position: absolute; /* Adicionar position para usar top e left */
+    top: 10%; /* Ajustar conforme necessário */
+    left: 50%; /* Ajustar conforme necessário */
+    transform: translateX(-50%); /* Centralizar horizontalmente */
     color: #040404;
     border: 1px solid #040404; /* Adicionando a palavra-chave "solid" para definir o estilo da borda */
     background-color: #ffffff;
-    margin-top: 40px;
+    margin-top: 20px; /* Diminuir a margem superior */
+    box-sizing: border-box; /* Incluir bordas e padding nas dimensões */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+    .indicador-status-posicao {
+        font-size: 16px; /* Diminuir o tamanho da fonte em telas menores */
+        padding: 8px; /* Ajustar o padding */
+    }
+}
+
+@media (max-width: 400px) {
+    .indicador-status-posicao {
+        font-size: 14px; /* Diminuir ainda mais o tamanho da fonte em telas muito pequenas */
+        padding: 6px; /* Ajustar o padding */
+    }
 }
 
 .botton-container {
