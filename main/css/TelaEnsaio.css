@@ -67,18 +67,17 @@ footer {
     padding: 20px;
 }
 
-.left01 {
+.left01{
     width: 100%;
     padding: 20px;
 }
-
 .full-width {
     width: 100%;
     padding: 20px;
     background-color: white; /* Cor da coluna horizontal inferior */
 }
 
-.bottom-container {
+bottom-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,17 +122,6 @@ footer {
     margin-left: 5px;
 }
 
-.centered-text {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    width: 100%;
-    padding: 20px;
-    background-color: #ffffff;
-    color: #040404;
-    border: 1px solid #040404;
-    box-sizing: border-box;
-}
 
 /* Media Queries para responsividade */
 @media (max-width: 800px) {
@@ -171,9 +159,5 @@ footer {
 
     .indicador-status-valor-sufixo {
         font-size: 14px;
-    }
-
-    .centered-text {
-        font-size: 18px; /* Reduzir o tamanho do texto em telas menores */
     }
 }
