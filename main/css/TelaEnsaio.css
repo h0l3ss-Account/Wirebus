@@ -49,8 +49,7 @@ footer {
     margin: 70px 0 0; /* Espaço para o header */
 }
 
-.botton-container {
-}
+
 
 .bottom-container {
     height: 60vh; /* Altura para o container inferior */
@@ -186,7 +185,9 @@ footer {
 
 }
 
-
+.botton-container {
+    height: 50%;
+}
 
 .indicador-status-texto-posicao{
     color: #040404;
