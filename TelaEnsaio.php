@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferrusi</title>
+    <title>WIREBUS</title>
     <link rel="stylesheet" href="main/css/TelaEnsaio.css">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="main/js/GraficoEnsaio.js"></script>
@@ -11,7 +11,9 @@
 </head>
 <body>
     <header>
-        <img src="main/img/Logo.png" alt="Ferrusi Logo" class="logo">
+        <img src="main/img/Logo.png" alt="Logo" class="logo">
+        <img src="main/img/Spectra.png" alt="Logo" class="logo">
+
     </header>
     <div class="container top-container">
         <div class="left">
