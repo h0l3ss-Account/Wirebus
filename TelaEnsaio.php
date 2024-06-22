@@ -15,22 +15,17 @@
     </header>
     <div class="container top-container">
         <div class="left">
+        
+        </div>
+        <div class="center">
+                <div class="indicador-status-posicao">
                     <div class="indicador-status-texto-posicao">Posição:</div>
                     <div class="indicador-status-valor-posicao"> 0.256</div>
                     <div class="indicador-status-valor-sufixo"> mm</div>
-        </div>
-        <div class="center">
-         
+                </div>
         </div>
         <div class="right">
-            <div class="indicador-status-posicao">
-                   
-            </div>
-            <div class="indicador-status-forca">
-                    <div class="indicador-status-texto-forca">Força:</div>
-                    <div class="indicador-status-valor-forca"> 0</div>
-                    <div class="indicador-status-valor-sufixo-forca"> N</div>
-            </div>
+
         </div>
     </div>
     <div class="container bottom-container">
