@@ -15,11 +15,9 @@
     </header>
 
     <div class="container top-container">
-        <div class="center01">
+    <div class="center01">
         Monitoramento em Núvem - WMT-306
         </div>
-    </div>
-    <div class="container top-container">
         <div class="left">
             <img src="main/img/Equipamento.png">
         </div>
