@@ -49,10 +49,12 @@ footer {
     margin: 70px 0 0; /* Espaço para o header */
 }
 
-
-
 .bottom-container {
-    height: 60vh; /* Altura para o container inferior */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaço entre os elementos */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 20px;
 }
 
 .left, .center, .right {
@@ -60,14 +62,10 @@ footer {
     padding: 20px;
 }
 
-
-
 .center01 {
     width: 60%; /* Cada coluna ocupará um terço da largura da tela */
     padding: 20px;
 }
-
-
 
 .full-width {
     width: 100%;
@@ -75,46 +73,10 @@ footer {
     background-color: white; /* Cor da coluna horizontal inferior */
 }
 
-
-/* Seus outros estilos específicos */
-
-
-.project-info {
-    text-align: center;
-    position: relative; /* Para posicionar a bolinha */
-}
-
-.project-info h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.responsive-img {
-    max-width: 80%;
-    height: auto;
-    margin: 20px 0; /* Espaçamento superior e inferior */
-}
-
-.titulo {
-    color: #040404;
-    font-size: 26px;
-    font-weight: bold;
-    font-variant-caps: all-petite-caps;
-}
-
-.project-name {
-    width: 80%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 .indicador-status-posicao {
     font-size: 18px;
     width: calc(50% - 20px); /* Dois elementos por linha, com espaçamento */
     max-width: 300px;
-    margin: 20px auto;
     padding: 10px;
     background-color: #ffffff;
     color: #040404;
@@ -142,9 +104,10 @@ footer {
 }
 
 /* Media Queries para responsividade */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .indicador-status-posicao {
         font-size: 16px;
+        width: 100%; /* Elementos ocupam toda a largura em telas menores */
     }
     
     .indicador-status-texto-posicao {
@@ -163,6 +126,7 @@ footer {
 @media (max-width: 400px) {
     .indicador-status-posicao {
         font-size: 14px;
+        width: 100%; /* Elementos ocupam toda a largura em telas menores */
     }
     
     .indicador-status-texto-posicao {
@@ -176,15 +140,4 @@ footer {
     .indicador-status-valor-sufixo {
         font-size: 14px;
     }
-}
-
-
-
-
-.botton-container {
-    height: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centralizar horizontalmente os elementos */
-    gap: 20px; /* Espaçamento entre os elementos */
 }
