@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^Monitoramento-WMT-306 index.php [L]
