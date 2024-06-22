@@ -112,14 +112,14 @@ footer {
 
 .indicador-status-posicao {
     font-size: 18px;
-    width: 100%;
+    width: calc(50% - 20px); /* Dois elementos por linha, com espaçamento */
     max-width: 300px;
-    margin: 20px auto; /* Centralizar a caixa horizontalmente */
+    margin: 20px auto;
     padding: 10px;
     background-color: #ffffff;
     color: #040404;
     border: 1px solid #040404;
-    box-sizing: border-box; /* Incluir bordas e padding nas dimensões */
+    box-sizing: border-box;
     text-align: center;
 }
 

@@ -36,6 +36,16 @@
                 <div class="indicador-status-valor-posicao"> 0</div>
                 <div class="indicador-status-valor-sufixo"> mm</div>
             </div>
+            <div class="indicador-status-posicao">
+                <div class="indicador-status-texto-posicao">Digital Input 1:</div>
+                <div class="indicador-status-valor-posicao"> 0</div>
+                <div class="indicador-status-valor-sufixo"> mm</div>
+            </div>
+            <div class="indicador-status-posicao">
+                <div class="indicador-status-texto-posicao">SSR:</div>
+                <div class="indicador-status-valor-posicao"> 0</div>
+                <div class="indicador-status-valor-sufixo"> mm</div>
+            </div>
         </div>
         <div class="center">
       
