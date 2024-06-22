@@ -20,11 +20,8 @@
         <img src="main/img/Equipamento.png">
 
         </div>
-        <div class="center">
+        <div class="center01">
         <div class="full-width" id="grafico-container"></div>
-
-               
-
         </div>
     </div>
     <div class="container botton-container">
