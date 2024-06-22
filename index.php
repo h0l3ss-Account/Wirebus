@@ -26,10 +26,10 @@
                     <div class="indicador-status-valor-posicao"> 0.256</div>
                     <div class="indicador-status-valor-sufixo"> mm</div>
                 </div>
-                <div class="full-width" id="grafico-container"></div>
 
         </div>
         <div class="right">
+        <div class="full-width" id="grafico-container"></div>
 
         </div>
     </div>

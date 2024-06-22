@@ -46,7 +46,6 @@ footer {
 }
 
 .top-container {
-    height: calc(30vh - 0px); /* Altura para o container superior */
     margin: 70px 0 0; /* Espaço para o header */
 }
 
