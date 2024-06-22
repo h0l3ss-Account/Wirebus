@@ -17,7 +17,7 @@
     </header>
     <div class="container top-container">
         <div class="left">
-        <img src="main/img/SPECTRA.png">
+        <img src="main/img/Equipamento.png">
 
         </div>
         <div class="center">
