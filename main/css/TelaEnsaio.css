@@ -70,7 +70,6 @@ footer {
 }
 
 .left01 {
-    font-variant-caps: all-small-caps;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
@@ -78,6 +77,8 @@ footer {
     padding: 20px;
     background-color: #ffffff;
     color: #040404;
+    font-family: monospace;
+    
 }
 
 

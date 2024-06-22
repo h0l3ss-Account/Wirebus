@@ -16,7 +16,7 @@
 
     <div class="container botton-container">
         <div class="left01">
-            Monitoramento em Núvem - Spectra WMT-306
+        Monitoramento em Nuvem - Spectra WMT-306
         </div>
     </div>
     <div class="container top-container">
