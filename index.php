@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <img src="main/img/Logo.png" alt="Logo" class="logo">
         <img src="main/img/SENAI_São_Paulo_logo.png" alt="Logo" class="logo">
+        <img src="main/img/Logo.png" alt="Logo" class="logo">
 
     </header>
     <div class="container top-container">
