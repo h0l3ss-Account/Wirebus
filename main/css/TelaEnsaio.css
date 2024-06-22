@@ -51,6 +51,34 @@ footer {
 
 .bottom-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaço entre os elementos */
+    gap: 20px; /* Espaçamento entre os elementos */
+    padding: 20px;
+}
+
+.left, .center, .right {
+    width: 33.33%; /* Cada coluna ocupará um terço da largura da tela */
+    padding: 20px;
+}
+
+.center01 {
+    width: 60%; /* Cada coluna ocupará um terço da largura da tela */
+    padding: 20px;
+}
+
+.left01{
+    width: 100%;
+    padding: 20px;
+}
+.full-width {
+    width: 100%;
+    padding: 20px;
+    background-color: white; /* Cor da coluna horizontal inferior */
+}
+
+bottom-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 60vh; /* Altura para o container inferior */
@@ -94,10 +122,12 @@ footer {
     margin-left: 5px;
 }
 
+
 /* Media Queries para responsividade */
 @media (max-width: 800px) {
     .indicador-status-posicao {
-        width: 150px; /* Ajuste conforme necessário para telas menores */
+        font-size: 16px;
+        width: 100%; /* Elementos ocupam toda a largura em telas menores */
     }
     
     .indicador-status-texto-posicao {
@@ -113,14 +143,10 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
-    .left01 {
-        flex-direction: column;
-        align-items: center;
-    }
-    
+@media (max-width: 400px) {
     .indicador-status-posicao {
-        width: 100%; /* Um item por linha em telas muito pequenas */
+        font-size: 14px;
+        width: 100%; /* Elementos ocupam toda a largura em telas menores */
     }
     
     .indicador-status-texto-posicao {
