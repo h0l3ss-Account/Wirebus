@@ -20,7 +20,8 @@ header {
 }
 
 header .logo {
-    height: 60px; /* Ajuste conforme necessário */
+    height: 40px; /* Ajuste conforme necessário */
+    margin-left: 10px;
 }
 
 footer {
