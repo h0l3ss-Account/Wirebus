@@ -13,8 +13,10 @@
         <img src="main/img/SENAI_São_Paulo_logo.png" alt="Logo" class="logo">
         <img src="main/img/Logo.png" alt="Logo" class="logo">
     </header>
-    <div class="container botton-container">
-        Monitoramento em Núvem - WMT-306
+    <div class="container top-container">
+        <div class="centered-text">
+            Monitoramento em Núvem - WMT-306
+        </div>
     </div>
     <div class="container top-container">
         <div class="left">
@@ -29,21 +31,25 @@
             <div class="indicador-status-posicao">
                 <div class="indicador-status-texto-posicao">Analog Output 1:</div>
                 <div class="indicador-status-valor-posicao">0</div>
+                <br>
                 <div class="indicador-status-valor-sufixo">0 ~ 20 mA</div>
             </div>
             <div class="indicador-status-posicao">
                 <div class="indicador-status-texto-posicao">Analog Output 2:</div>
                 <div class="indicador-status-valor-posicao">0</div>
+                <br>
                 <div class="indicador-status-valor-sufixo">0 ~ 20 mA</div>
             </div>
             <div class="indicador-status-posicao">
                 <div class="indicador-status-texto-posicao">Digital Input 1:</div>
                 <div class="indicador-status-valor-posicao">0</div>
+                <br>
                 <div class="indicador-status-valor-sufixo">DI</div>
             </div>
             <div class="indicador-status-posicao">
                 <div class="indicador-status-texto-posicao">SSR:</div>
                 <div class="indicador-status-valor-posicao">0</div>
+                <br>
                 <div class="indicador-status-valor-sufixo">On/Off</div>
             </div>
         </div>
