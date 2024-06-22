@@ -46,8 +46,9 @@
                 <div class="indicador-status-valor-posicao">OFF</div>
             </div>
         </div>
-        Copyright © SENAI 2024
     </div>
-
+    <footer>
+        Copyright © SENAI 2024
+    </footer>
 </body>
 </html>
