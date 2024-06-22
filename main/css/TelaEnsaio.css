@@ -12,6 +12,7 @@ header {
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -44,6 +45,10 @@ footer {
     overflow-y: auto; /* Adicionando barra de rolagem caso necessário */
 }
 
+.top-container {
+    margin-top: 70px; /* Espaço para o header */
+}
+
 .bottom-container {
     display: flex;
     flex-wrap: wrap;
@@ -62,20 +67,36 @@ footer {
     padding: 20px;
 }
 
-.left01{
+.left01 {
     width: 100%;
     padding: 20px;
 }
+
 .full-width {
     width: 100%;
     padding: 20px;
     background-color: white; /* Cor da coluna horizontal inferior */
 }
 
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Altura para o container inferior */
+    padding: 20px;
+}
+
+.left01 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
 .indicador-status-posicao {
     font-size: 18px;
-    width: calc(50% - 20px); /* Dois elementos por linha, com espaçamento */
-    max-width: 300px;
+    width: 200px; /* Ajuste conforme necessário */
+    margin: 10px;
     padding: 10px;
     background-color: #ffffff;
     color: #040404;
@@ -102,6 +123,22 @@ footer {
     margin-left: 5px;
 }
 
+.centered-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    color: #040404;
+    border: 1px solid #040404;
+    box-sizing: border-box;
+    margin-top: 120px; /* Espaço para o header */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 /* Media Queries para responsividade */
 @media (max-width: 800px) {
     .indicador-status-posicao {
@@ -119,6 +156,10 @@ footer {
 
     .indicador-status-valor-sufixo {
         font-size: 16px;
+    }
+
+    .centered-text-container {
+        font-size: 20px;
     }
 }
 
@@ -138,5 +179,9 @@ footer {
 
     .indicador-status-valor-sufixo {
         font-size: 14px;
+    }
+
+    .centered-text-container {
+        font-size: 18px; /* Reduzir o tamanho do texto em telas menores */
     }
 }
