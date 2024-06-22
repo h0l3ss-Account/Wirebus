@@ -12,11 +12,7 @@
     <header>
         <img src="main/img/SENAI_São_Paulo_logo.png" alt="Logo" class="logo">
         <img src="main/img/Logo.png" alt="Logo" class="logo">
-        <div class="container centered-text-container">
-        Monitoramento em Núvem - WMT-306
-    </div>
     </header>
-
     <div class="container top-container">
         <div class="left">
             <img src="main/img/Equipamento.png">
