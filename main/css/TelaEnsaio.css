@@ -53,30 +53,30 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Espaço entre os elementos */
-    gap: 20px; /* Espaçamento entre os elementos */
     padding: 20px;
 }
 
 .left, .center, .right {
-    width: 33.33%; /* Cada coluna ocupará um terço da largura da tela */
+    width: 100%; /* Full width in smaller screens */
     padding: 20px;
 }
 
 .center01 {
-    width: 60%; /* Cada coluna ocupará um terço da largura da tela */
+    width: 60%; /* Each column will take up a third of the screen width */
     padding: 20px;
 }
 
 .full-width {
     width: 100%;
     padding: 20px;
-    background-color: white; /* Cor da coluna horizontal inferior */
+    background-color: white; /* Background color of the bottom horizontal column */
 }
 
 .indicador-status-posicao {
     font-size: 18px;
-    width: calc(50% - 20px); /* Dois elementos por linha, com espaçamento */
+    width: calc(50% - 20px); /* Two items per row with spacing */
     max-width: 300px;
+    margin: 10px auto;
     padding: 10px;
     background-color: #ffffff;
     color: #040404;
@@ -88,7 +88,7 @@ footer {
 .indicador-status-texto-posicao {
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 10px; /* Espaço entre o texto e a caixa */
+    margin-bottom: 10px; /* Space between text and box */
 }
 
 .indicador-status-valor-posicao {
@@ -103,11 +103,10 @@ footer {
     margin-left: 5px;
 }
 
-/* Media Queries para responsividade */
+/* Media Queries for responsiveness */
 @media (max-width: 800px) {
     .indicador-status-posicao {
-        font-size: 16px;
-        width: 100%; /* Elementos ocupam toda a largura em telas menores */
+        width: calc(50% - 20px); /* Two items per row */
     }
     
     .indicador-status-texto-posicao {
@@ -123,10 +122,9 @@ footer {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .indicador-status-posicao {
-        font-size: 14px;
-        width: 100%; /* Elementos ocupam toda a largura em telas menores */
+        width: 100%; /* One item per row */
     }
     
     .indicador-status-texto-posicao {
