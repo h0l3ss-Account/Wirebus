@@ -13,9 +13,26 @@ try {
 
     echo "Conexão bem-sucedida!<br>";
 
+    // SQL para excluir a tabela se ela existir
+    $sqlDrop = "IF OBJECT_ID('Sonda', 'U') IS NOT NULL DROP TABLE Sonda;";
+    $conn->exec($sqlDrop);
+    echo "Tabela 'Sonda' excluída, se existia.<br>";
+
+    // SQL para criar a tabela com timestamp automático
+    $sqlCreate = "
+        CREATE TABLE Sonda (
+            ID INT IDENTITY(1,1) PRIMARY KEY,
+            payload VARCHAR(255),
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,  -- Preenche com a data e hora atuais por padrão
+            topic VARCHAR(255)
+        );
+    ";
+    $conn->exec($sqlCreate);
+    echo "Tabela 'Sonda' criada com sucesso!<br>";
+
     // SQL para selecionar todos os valores da tabela Sonda
-    $sql = "SELECT * FROM Sonda";
-    $stmt = $conn->query($sql);
+    $sqlSelect = "SELECT * FROM Sonda";
+    $stmt = $conn->query($sqlSelect);
 
     // Verifica se há resultados
     if ($stmt->rowCount() > 0) {
