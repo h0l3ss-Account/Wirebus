@@ -17,17 +17,12 @@ try {
     $sql = "SELECT * FROM Sonda";
     $stmt = $conn->query($sql);
 
-    // Verifica se há resultados
-    if ($stmt->rowCount() > 0) {
-        // Recupera e exibe os resultados
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            echo "ID: " . $row['ID'] . " | ";
-            echo "Payload: " . $row['payload'] . " | ";
-            echo "Timestamp: " . $row['timestamp']->format('Y-m-d H:i:s') . " | ";
-            echo "Topic: " . $row['topic'] . "<br>";
-        }
-    } else {
-        echo "Nenhum dado encontrado na tabela 'Sonda'.";
+    // Recupera e exibe os resultados
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        echo "ID: " . $row['ID'] . " | ";
+        echo "Payload: " . $row['payload'] . " | ";
+        echo "Timestamp: " . $row['timestamp']->format('Y-m-d H:i:s') . " | ";
+        echo "Topic: " . $row['topic'] . "<br>";
     }
 } catch (PDOException $e) {
     echo "Erro: " . $e->getMessage();
