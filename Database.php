@@ -11,8 +11,20 @@ try {
     // Define o modo de erro para exceção
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    echo "Conexão bem-sucedida!";
+    echo "Conexão bem-sucedida!<br>";
+
+    // SQL para selecionar todos os valores da tabela Sonda
+    $sql = "SELECT * FROM Sonda";
+    $stmt = $conn->query($sql);
+
+    // Recupera e exibe os resultados
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        echo "ID: " . $row['ID'] . " | ";
+        echo "Payload: " . $row['payload'] . " | ";
+        echo "Timestamp: " . $row['timestamp']->format('Y-m-d H:i:s') . " | ";
+        echo "Topic: " . $row['topic'] . "<br>";
+    }
 } catch (PDOException $e) {
-    echo "Erro na conexão: " . $e->getMessage();
+    echo "Erro: " . $e->getMessage();
 }
 ?>
