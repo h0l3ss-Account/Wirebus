@@ -11,25 +11,8 @@ try {
     // Define o modo de erro para exceção
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // SQL para excluir a tabela se ela existir
-    $sqlDrop = "IF OBJECT_ID('Sonda', 'U') IS NOT NULL DROP TABLE Sonda;";
-    $conn->exec($sqlDrop);
-    echo "Tabela 'Sonda' excluída, se existia.";
-
-    // SQL para criar a nova tabela
-    $sqlCreate = "
-        CREATE TABLE Sonda (
-            ID INT IDENTITY(1,1) PRIMARY KEY,
-            payload VARCHAR(255),
-            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-            topic VARCHAR(255)  -- Campo adicional
-        );
-    ";
-
-    // Executa o comando SQL para criar a tabela
-    $conn->exec($sqlCreate);
-    echo "Tabela 'Sonda' criada com sucesso!";
+    echo "Conexão bem-sucedida!";
 } catch (PDOException $e) {
-    echo "Erro: " . $e->getMessage();
+    echo "Erro na conexão: " . $e->getMessage();
 }
 ?>
