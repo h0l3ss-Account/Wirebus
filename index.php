@@ -30,7 +30,7 @@
     <div class="container botton-container">
         <div class="left01">
             <div class="indicador-status-posicao">
-                <div class="indicador-status-texto-posicao">Analog Output 1:</div>
+                <div class="indicador-status-texto-posicao">Analog Output 11:</div>
                 <div class="indicador-status-valor-posicao">0</div>
             </div>
             <div class="indicador-status-posicao">
