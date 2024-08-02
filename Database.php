@@ -14,6 +14,7 @@ try {
     // SQL para excluir a tabela se ela existir
     $sqlDrop = "IF OBJECT_ID('Sonda', 'U') IS NOT NULL DROP TABLE Sonda;";
     $conn->exec($sqlDrop);
+    echo "Tabela 'Sonda' excluída, se existia.";
 
     // SQL para criar a nova tabela
     $sqlCreate = "
@@ -27,7 +28,7 @@ try {
 
     // Executa o comando SQL para criar a tabela
     $conn->exec($sqlCreate);
-    echo "Tabela 'Sonda' criada com sucesso1111!";
+    echo "Tabela 'Sonda' criada com sucesso!";
 } catch (PDOException $e) {
     echo "Erro: " . $e->getMessage();
 }
