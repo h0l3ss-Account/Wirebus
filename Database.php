@@ -1,33 +1,65 @@
 <?php
-$serverName = "tcp:wirebuss.database.windows.net,1433";
-$database = "WirebussSQL";
-$username = "wirebuss";
-$password = "Eng12345";
-
+// Conexão usando PDO
 try {
-    // Cria uma conexão PDO com o driver sqlsrv
-    $conn = new PDO("sqlsrv:server=$serverName;Database=$database", $username, $password);
+    // Cria uma conexão PDO
+    $connPDO = new PDO("sqlsrv:server=tcp:wirebuss.database.windows.net,1433;Database=WirebussSQL", "wirebuss", "Eng12345");
+    $connPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Conexão PDO bem-sucedida!<br>";
     
-    // Define o modo de erro para exceção
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    echo "Conexão bem-sucedida!<br>";
-
-    // SQL para selecionar todos os valores da tabela Sonda
+    // Consulta para selecionar todos os valores da tabela Sonda
     $sqlSelect = "SELECT * FROM Sonda";
-    $stmt = $conn->query($sqlSelect);
+    $stmtPDO = $connPDO->query($sqlSelect);
 
     // Verifica se há resultados
-    if ($stmt->rowCount() > 0) {
+    if ($stmtPDO->rowCount() > 0) {
         // Recupera e exibe os resultados
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        while ($row = $stmtPDO->fetch(PDO::FETCH_ASSOC)) {
             echo "ID: " . $row['ID'] . " | ";
             echo "Payload: " . $row['payload'] . "<br>";
         }
     } else {
-        echo "Nenhum dado encontrado na tabela 'Sonda'.";
+        echo "Nenhum dado encontrado na tabela 'Sonda' com PDO.<br>";
     }
 } catch (PDOException $e) {
-    echo "Erro: " . $e->getMessage();
+    echo "Erro na conexão PDO: " . $e->getMessage() . "<br>";
 }
+
+// Conexão usando sqlsrv
+$connectionInfo = array(
+    "UID" => "wirebuss",
+    "pwd" => "Eng12345",
+    "Database" => "WirebussSQL",
+    "LoginTimeout" => 30,
+    "Encrypt" => 1,
+    "TrustServerCertificate" => 0
+);
+$serverName = "tcp:wirebuss.database.windows.net,1433";
+$connSqlsrv = sqlsrv_connect($serverName, $connectionInfo);
+
+if ($connSqlsrv === false) {
+    die(print_r(sqlsrv_errors(), true));
+}
+echo "Conexão sqlsrv bem-sucedida!<br>";
+
+// Consulta para selecionar todos os valores da tabela Sonda usando sqlsrv
+$sqlSelectSqlsrv = "SELECT * FROM Sonda";
+$stmtSqlsrv = sqlsrv_query($connSqlsrv, $sqlSelectSqlsrv);
+
+if ($stmtSqlsrv === false) {
+    die(print_r(sqlsrv_errors(), true));
+}
+
+// Verifica se há resultados
+if (sqlsrv_has_rows($stmtSqlsrv)) {
+    // Recupera e exibe os resultados
+    while ($row = sqlsrv_fetch_array($stmtSqlsrv, SQLSRV_FETCH_ASSOC)) {
+        echo "ID: " . $row['ID'] . " | ";
+        echo "Payload: " . $row['payload'] . "<br>";
+    }
+} else {
+    echo "Nenhum dado encontrado na tabela 'Sonda' com sqlsrv.<br>";
+}
+
+// Fecha a conexão
+sqlsrv_close($connSqlsrv);
 ?>
